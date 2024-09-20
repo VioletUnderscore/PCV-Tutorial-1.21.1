@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pcvtutorial",
+	"version": "${version}",
+	"name": "Public class Violet Tutorial Mod",
+	"description": "This is the mod that is used in Violet's tutorial series @PublicClassViolet (YT)",
+	"authors": [
+		"VioletUnderscore"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pcvtutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.violetunderscore.pcvtutorial.PCVTutorial"
+		],
+		"fabric-datagen": [
+			"net.violetunderscore.pcvtutorial.PCVTutorialDataGenerator"
+		],
+		"client": [
+			"net.violetunderscore.pcvtutorial.PCVTutorialClient"
+		]
+	},
+	"mixins": [
+		"pcvtutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
