@@ -12,7 +12,7 @@ public class PCVTutorial implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Github!");
+		LOGGER.info("Hello Github, Again!");
 	}
 }
 
